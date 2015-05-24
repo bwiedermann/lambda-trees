@@ -4,7 +4,7 @@
  */
 
 start 
-   = expr ws
+   = ws e:expr ws {return e;}
 
 expr 
    = n:integer      
@@ -28,4 +28,4 @@ integer "integer"
    = digits:[0-9]+ { return {"name": parseInt(digits.join(""), 10)}; }
 
 ws "whitespace" 
-   = [ \t\n\r]*
+   = [ \t\n\r]* {return;}
