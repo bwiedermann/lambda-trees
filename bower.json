@@ -1,7 +1,7 @@
 {
   "name": "lambda-trees",
   "description": "Visualizing lambda expressions",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "d3": "~3.5.5"
   }
