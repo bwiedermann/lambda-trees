@@ -8,7 +8,7 @@ start
 
 expr 
    = n:integer      
-   / x: variable    
+   / x: variable {return {"name": x.join("")};}
    / function
    / application
 
@@ -22,7 +22,7 @@ lambda "λ"
    = "λ"
 
 variable "variable" 
-   = name:[a-zA-Z]+ {return {"name": name.join("")};}
+   = name:[a-zA-Z]+ 
 
 integer "integer" 
    = digits:[0-9]+ { return {"name": parseInt(digits.join(""), 10)}; }

@@ -25,7 +25,7 @@ To set up the environment:
    directory:
 
     ```
-    pegjs assets/lambda.pegjs js/lambda.js
+    pegjs assets/lambda.pegjs js/lambda-parser.js
     ```
 
    1. pegjs assumes we're using node on the server, but wer' not. So, we need to
