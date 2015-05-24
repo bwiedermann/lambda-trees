@@ -5,5 +5,5 @@
   "dependencies": {
     "d3": "~3.5.5"
   },
-  "keywords": ["lambda caculus", "programming languages", "visualization", "teaching"],
+  "keywords": ["lambda caculus", "programming languages", "visualization", "teaching"]
 }
