@@ -4,7 +4,7 @@
  */
 
 start 
-   = expr
+   = expr ws
 
 expr 
    = n:integer      
