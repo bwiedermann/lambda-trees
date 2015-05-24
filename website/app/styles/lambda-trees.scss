@@ -1,0 +1,35 @@
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+$node-text-color: cornflowerblue;
+$node-border-color: steelblue;
+$link-color: peachpuff;
+
+textarea#expression {
+  @extend .form-control;
+  font-size: large;
+}
+
+#messages {
+  @extend .alert;
+  @extend .alert-success;
+  margin: 5px 0px;
+}
+
+#tree-viz {
+  .node text { 
+    font: 14px sans-serif; 
+    fill: $node-text-color;
+  }
+
+  .node square {
+    fill: #fff;
+    stroke: $node-border-color;
+    stroke-width: 3px;
+  }
+
+  .link {
+    fill: none;
+    stroke: $link-color;
+    stroke-width: 2px;
+  }
+}
