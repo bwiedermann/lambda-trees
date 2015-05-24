@@ -3,7 +3,6 @@
   "description": "Visualizing lambda expressions",
   "version": "1.0.0",
   "dependencies": {
-    "pegjs": "~0.8.0",
     "d3": "~3.5.5"
   }
 }
