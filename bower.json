@@ -11,5 +11,9 @@
   ],
   "ignore": [
     "website"
-  ]
+  ],
+  "scripts": [
+    "js/lambda-parser.js",
+    "js/lamdba-trees.js"
+  ],
 }
