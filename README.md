@@ -24,6 +24,22 @@ To set up the environment:
    1. Generate a new parser, by running the following command in the top-level
    directory:
 
-     ```
-     pegjs assets/lambda.pegjs js/lambda.js
-     ```
+    ```
+    pegjs assets/lambda.pegjs js/lambda.js
+    ```
+
+   1. pegjs assumes we're using node on the server, but wer' not. So, we need to
+   modify the generated parser. 
+      a. Uncomment the first line, which looks something like:
+
+        ```
+        module.exports = (function() {
+        ```
+      b. Uncomment the last few lines, which look something like:
+        ```
+          return {
+           SyntaxError: SyntaxError,
+           parse:       parse
+          };
+        })();
+        ```
