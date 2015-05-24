@@ -11,7 +11,7 @@ textarea#expression {
 
 #messages {
   @extend .alert;
-  @extend .alert-success;
+  @extend .alert-danger;
   margin: 5px 0px;
 }
 
