@@ -1,0 +1,8 @@
+{
+  "name": "lambda-trees",
+  "description": "Visualizing lambda expressions",
+  "version": "1.0.0",
+  "dependencies": {
+    "pegjs": "~0.8.0"
+  }
+}
