@@ -4,5 +4,6 @@
   "version": "0.1.0",
   "dependencies": {
     "d3": "~3.5.5"
-  }
+  },
+  "keywords": ["lambda caculus", "programming languages", "visualization", "teaching"],
 }
