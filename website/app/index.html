@@ -19,7 +19,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body ng-app="lambdaTreesApp" ng-controller="VisController">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -40,14 +40,11 @@
       </div>
 
       <div id="text-entry">
-        <textarea id="expression" type="text" placeholder="λx.x"></textarea>
+        <textarea id="expression" type="text" ng-model="expression"></textarea>
       </div>
 
-      <div id="messages" role="alert">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
-        perspiciatis, quod, numquam dolorem molestiae nulla tenetur vitae minus
-        ipsa repudiandae reiciendis officiis ad eaque alias quae ut dicta.
-        Similique, soluta.
+      <div id="messages" role="alert" ng-show="expression">
+          {{expression}}
       </div>
 
       <div id="tree-vis">
@@ -72,6 +69,10 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/lambda-trees/js/lambda-parser.js"></script>
+    <script src="bower_components/lambda-trees/js/lambda-trees.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
