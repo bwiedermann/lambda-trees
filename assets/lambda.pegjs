@@ -16,7 +16,7 @@ application "application"
    = "(" ws left:expr ws right:expr ws ")" {return {"name": "@", "children": [left, right]};}
 
 function "function"
-   = lambda ws x:variable "." body:expr {return {"name": "λ" + x, "children": body};}
+   = lambda ws x:variable "." body:expr {return {"name": "λ" + x, "children": [body]};}
 
 lambda "λ"
    = "λ"

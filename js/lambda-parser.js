@@ -43,7 +43,7 @@
         peg$c8 = { type: "other", description: "function" },
         peg$c9 = ".",
         peg$c10 = { type: "literal", value: ".", description: "\".\"" },
-        peg$c11 = function(x, body) {return {"name": "λ" + x, "children": body};},
+        peg$c11 = function(x, body) {return {"name": "λ" + x, "children": [body]};},
         peg$c12 = { type: "other", description: "\u03BB" },
         peg$c13 = "\u03BB",
         peg$c14 = { type: "literal", value: "\u03BB", description: "\"\\u03BB\"" },
