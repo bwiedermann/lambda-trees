@@ -20,6 +20,7 @@ function "function"
 
 lambda "λ"
    = "λ"
+   / "\\"
 
 variable "variable" 
    = name:[a-zA-Z]+ 
