@@ -17,3 +17,13 @@ To set up the environment:
    2. Clone this repository
 
    3. Run `bower install` to install the remaining dependencies
+
+#### Modifying the parser
+
+   1. Modify the grammar in the file `assets/lambda.pegjs`
+   1. Generate a new parser, by running the following command in the top-level
+   directory:
+
+     ```
+     pegjs assets/lambda.pegjs js/lambda.js
+     ```
