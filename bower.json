@@ -7,13 +7,13 @@
   "keywords": ["lambda-caculus", "programming-languages", "visualization", "teaching"],
   "main": [
     "js/lambda-parser.js",
-    "js/lamdba-trees.js"    
+    "js/lambda-trees.js"    
   ],
   "ignore": [
     "website"
   ],
   "scripts": [
     "js/lambda-parser.js",
-    "js/lamdba-trees.js"
+    "js/lambda-trees.js"
   ]
 }
