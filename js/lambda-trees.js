@@ -13,9 +13,11 @@ var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.x, d.y]; });
 
 function drawTree(elem, root) {
-  console.log(root);
+
+  d3.select('#tree-svg').remove();
 
   var svg = d3.select(elem).append("svg")
+    .attr("id", "tree-svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
