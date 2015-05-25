@@ -2,6 +2,21 @@
 <!-- Based on: https://leanpub.com/D3-Tips-and-Tricks/read -->
 
 // ************** Generate the tree diagram  *****************
+
+/**
+ * [height most number of nodes from root to a leaf, inclusive]
+ */
+function treeHeight(tree) {
+  if (!tree) {
+    return 0;
+  } else if (!tree['children']) {
+    return 1;
+  } else {
+    var childHeights = tree['children'].map(treeHeight);
+    return 1 + Math.max.apply(Math, childHeights);
+  }
+}
+
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
   width = 960 - margin.right - margin.left,
   height = 500 - margin.top - margin.bottom;
