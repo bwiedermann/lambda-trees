@@ -4,7 +4,7 @@ $node-text-color: cornflowerblue;
 $node-border-color: steelblue;
 $link-color: peachpuff;
 
-textarea#expression {
+#expression {
   @extend .form-control;
   font-size: large;
 }
@@ -16,8 +16,12 @@ textarea#expression {
 }
 
 #tree-vis {
+  margin-top: 20px;
+  //border-top: 1px solid #aaaaaa;
+  //border-bottom: 1px solid #aaaaaa;
+
   .node text { 
-    font: 14px sans-serif; 
+    font: 18px sans-serif; 
     fill: $node-text-color;
   }
 
