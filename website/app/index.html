@@ -40,11 +40,16 @@
       </div>
 
       <div id="text-entry">
-        <textarea id="expression" type="text" ng-model="expression"></textarea>
+        <textarea id="expression" 
+                  type="text" 
+                  ng-model="expression"
+                  ng-change="displayExpression();">
+          
+        </textarea>
       </div>
 
-      <div id="messages" role="alert" ng-show="expression">
-          {{expression}}
+      <div id="messages" role="alert" ng-show="errorMessage">
+          {{errorMessage}}
       </div>
 
       <div id="tree-vis">
