@@ -18,7 +18,11 @@ lambdaTreesApp.controller('VisController', ['$scope', function($scope) {
        $scope.errorMessage = '';
        drawTree('#tree-vis', result);
       } catch (e) {
-       $scope.errorMessage = buildErrorMessage(e);
+        if (e instanceof SyntaxError) {
+         $scope.errorMessage = buildErrorMessage(e);
+        } else {
+          throw e;
+        }
       }
      };
 
