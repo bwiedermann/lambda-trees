@@ -25,7 +25,7 @@ var diagonal = d3.svg.diagonal()
   .projection(function(d) { return [d.x, d.y]; });
 
 function drawTree(elem, root) {
-  d3.select('#tree-svg').remove();
+  d3.select(elem).select('#tree-svg').remove();
 
   // compute sizes
   var svgWidth = parseInt(d3.select(elem).style('width'), 10);
